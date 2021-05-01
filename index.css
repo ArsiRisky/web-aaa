@@ -1,0 +1,1953 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@font-face {
+         font-family: "LEMONMILK-Regular";
+         src: url('LEMONMILK-Regular.OTF');
+         }
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	background: #f5f5f5;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+}
+.banner{
+	overflow: hidden;
+}
+.banner img{
+	width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+header .sticky{
+  background-color: #1b1b1b;
+  padding: 0px 0px 0px 0px;
+  transition: 0.5s;
+}
+header .sticky ul li a{
+  color: #fff;
+  transition: 0.5s;
+}
+header .sticky .icon{
+  padding: 0 10px;
+}/*
+.navv{
+	width: 100%;
+}*/
+.navv nav{
+  z-index: 2000;
+  position: fixed;
+  padding-top: 10px;
+  width: 100%;
+}
+.navv nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+.navv nav .logo{
+  float: left;
+  padding-left: 60px;
+}
+.logo img{
+  width: 10%;
+}
+.navv nav ul{
+  float: right;
+  list-style: none;
+  padding-top: 10px;
+  padding-right: 60px;
+}
+.navv nav ul li{
+  float: left;
+  display: inline-block;
+  background: none;
+  margin: 0 5px;
+}
+.navv nav ul li a{
+  text-decoration: none;
+  color: #c2c2c2;
+  font-size: 14px;
+  padding: 22px 20px;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+.navv nav ul li a:hover{
+  color: #fff;
+}
+.navv nav ul ul{
+  width: 100%; 
+  position: absolute;
+  top: 90px;
+  color: #c2c2c2;
+  background: #1b1b1b;
+  font-size: 14px;
+  padding: 22px 20px;
+  transition: 0.5s ease;
+  font-weight: bold;
+  transition: .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.navv nav ul ul ul{
+  border-top: none;
+}
+.navv nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+.navv nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.navv nav ul ul li a{
+  line-height: 10px;
+}
+.navv nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+a{
+	text-decoration: none;
+}
+.nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .2s;
+  margin-top: 5px;
+}
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .2s;
+  margin-top: 5px;
+  padding-left: 18px;
+}/*
+.flex{ 
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-flex-direction: row;  
+	flex-direction: row; 
+	-webkit-justify-content: flex-start; 
+	justify-content: flex-start;
+}*/
+.show,.icon,#btn,#btn-1{
+  display: none;
+  transition: 0.5s;
+}/*
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}*/
+.main{
+	position: absolute;
+	top: 250px;
+	left: 10%;
+}
+.main h1{
+	width: 544px;
+	font-family: 'LEMON MILK';
+	font-style: normal;
+	font-weight: bold;
+	color: #4CB648;
+	font-size: 72px;
+	line-height: 74px;
+}
+.main h3{
+	width: auto;
+	font-style: normal;
+	color: #fff;
+	font-size: 40px;
+	line-height: 47px;
+}
+.contact-product{
+	margin-top: 30px;
+	position: absolute;	
+}
+.contact-product ul{
+	display: flex;
+}
+.contact-product ul li{
+	padding-right: 30px;
+	list-style-type: none;
+	cursor: pointer;
+	z-index: 10;
+}
+.contact-product ul li a{
+	text-decoration: none;
+	background: #4CB648;
+	color: #fff38e;
+	padding: 10px 30px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.3s;
+	border: 3px solid#4CB648;
+	border-radius: 5px;
+}
+.contact-product ul li a:hover{
+	background: #fff38e;
+	color: #4CB648;
+	border: 3px solid#fff38e;
+}
+.contact-product ul li .kotak-pinggir{
+	background: none;
+	border: 3px solid#4CB648;
+	color: #4CB648;
+}
+.contact-product ul li .kotak-pinggir:hover{
+	background: #4CB648;
+	color: #fff38e;
+	border: 3px solid#4CB648;
+}
+.about{
+	width: 100%;
+	background: #e4f4fd;
+	padding-bottom: 100px;
+}
+.text{
+	text-align: center;
+	background: #f5f5f5;
+}
+.text h2{
+	text-align: center;
+	color: #4e4e4e;
+	font-size: 24px;
+	font-family: 'LEMON MILK';
+}
+.text p{
+	margin-top: 30px;
+	text-align: center;
+	margin: 0 5%;
+	font-size: 14px;
+}
+.us{
+	position: relative;
+	display: flex;
+	margin: 0 5%;
+	justify-content: center;
+}
+.us h2{
+	position: relative;
+	top: 50px;
+	font-family: 'LEMON MILK';
+	color: #4e4e4e;
+	font-size: 24px;
+	width: 100%;
+}
+.us .img{
+	top: 50px;
+	position: relative;
+	width: 100%;
+}
+.us .img img{
+	width: 80%;
+}
+.visimisi{
+	position: relative;
+	top: 50px;
+}
+.visi p{
+	font-size: 14px;
+}
+.misi p{
+	font-size: 14px;
+}/*
+.product{
+	position: relative;
+	width: 100%;
+}
+.box{
+	position: relative;
+	top: 50px;
+	left: 5%;
+	width: 90%;
+	height: 600px;
+	background: white;
+	box-shadow: 0px 0px 15px #cccccc;
+}
+.isi{
+	position: absolute;
+	top: 60px;
+	right: 10%;
+	width: 80%;
+	height: 525px;
+	overflow: hidden;
+}
+.isi figure{
+	position: relative;
+	width: 1005;
+	margin: 0;
+	left: 0;
+	animation: 2s slider infinite;
+}
+.image img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40%;
+}
+.wrapper{
+  position: absolute;
+	right: 0;
+	top: 0;
+	width: 40%;
+}
+.zoom-effect{
+  position: relative;
+  width: 100%;
+  height: 525px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.kotak{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.kotak img{
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 100%;
+}
+
+.zoom-effect:hover .kotak img{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}*/
+
+.pimpinan{
+	width: 100%;
+	margin: 0 auto;
+	background: #E4F4FD;
+}
+.kotak-pimpinan {
+    text-align: center;
+    margin: 50px 0;
+}
+.kotak-pimpinan h2{
+	position: relative;
+	font-size: 24px;
+	font-family: 'LEMON MILK';
+	text-align: center;
+}
+.konten-pimpinan {
+	z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 250px;
+}
+.isi-pimpinan1{
+	width: 100%;
+	transition: 0.2s ease;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-right: 40px;
+	margin: 5%;
+}
+.isi-pimpinan1 img{
+    width: 100%;
+}
+.isi-pimpinan2{
+	width: 100%;
+	transition: 0.2s ease;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 5%;
+}
+.isi-pimpinan2 img{
+    width: 100%;
+}
+.isi-pimpinan1:hover{
+	background: radial-gradient(circle at top left, #13855c, #4cb648);
+	color: #fff;
+	transform: translateY(-5%);
+}
+.isi-pimpinan2:hover{
+	background: radial-gradient(circle at top left, #13855c, #4cb648);
+	color: #fff;
+	transform: translateY(-5%);
+ }
+.tulisan-pimpinan{
+	padding: 5%;
+	box-shadow: 0px 6px 18px -8px rgba(118,130,183,1);
+	border-radius: 10px;
+	transition: 0.2s ease;
+	text-align: center;
+}
+.kotak-kontak{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.kontak{
+	position: relative;
+	top: 40px;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+} 
+.kontak .kontak-info{
+	position: absolute;
+	top: 40px;
+	width: 350px; 
+	height: calc(100% - 80px);
+	background: #4CB648;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+}
+.kontak .kontak-info h2{
+	color: #fff;
+	font-family: 'LEMON MILK';
+	font-size: 24px;
+	font-weight: 500;
+}
+.kontak .kontak-info ul.info{
+	position: relative;
+	top: 10px;	
+	margin: 20px 0;
+}
+.kontak .kontak-info ul.info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+.kontak .kontak-info ul.info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+.kontak .kontak-info ul.info li span:nth-child(1) img{
+	max-width: 100%;
+	filter: invert(1);
+}
+.kontak .kontak-info ul.info li span:nth-child(2){
+	color: #fff;
+	margin-left: 10px;
+	font-weight: 300;
+}
+.kontak .kontak-info ul.sci{
+	position: relative;
+	display: flex;
+}
+.kontak .kontak-info ul.sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+.kontak .kontak-info ul.sci li a{
+	text-decoration: none;
+}
+.kontak .kontak-info ul.sci li a img{
+	filter: invert(1);
+} 
+.kontak .kontak-form{
+	position: absolute;
+	padding: 70px 50px;
+	padding-left: 250px;
+	margin-left: 200px;
+	width: calc(100% - 150px);
+	height: 100%;
+	background: #fff;
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.25);
+}
+.kontak .kontak-form h2{
+	color: #4CB648;
+	font-family: 'LEMON MILK';
+	font-size: 24px;
+	font-weight: 500;
+}
+.kontak .kontak-form .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+.kontak .kontak-form .formBox .inputBox{
+	position: relative;
+	margin-bottom: 35px;
+}
+.kontak .kontak-form .formBox .inputBox.w50{
+	width: 47%;
+}
+.kontak .kontak-form .formBox .inputBox.w100{
+	width: 100%;
+}
+.kontak .kontak-form .formBox .inputBox input,
+.kontak .kontak-form .formBox .inputBox textarea{
+	width: 100%;
+	resize: none;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid#777;
+}
+.kontak .kontak-form .formBox .inputBox textarea{
+	height: 120px;
+}
+.kontak .kontak-form .formBox .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	pointer-events: none;
+	font-size: 18px;
+	font-weight: 300;
+	transition: 0.3s;
+}
+.kontak .kontak-form .formBox .inputBox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background: #4CB648;
+	color: #fff;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+}
+.kontak .kontak-form .formBox .inputBox input[type="submit"]:hover{
+	background: #fff38e;
+	color: #4CB648;
+}
+.berita-section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.berita{
+	position: relative;
+	top: 50px;
+	width: 80%;
+	margin: 0 auto;
+}
+.title {
+    text-align: center;
+    margin: 50px 0;
+}
+.title h2{
+	font-size: 24px;
+}
+.title h5{
+	color: #4cb648;
+	text-transform: uppercase;
+}
+.column-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+	width: 30%;
+}
+.card img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.card img:hover{
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
+}
+.panel{
+	padding: 5%;
+	box-shadow: 0px 6px 18px -8px rgba(118,130,183,1);
+	border-radius: 10px;
+	transition: 0.4s ease;
+}
+.panel p{
+	font-size: 14px;
+}
+.panel:hover{
+	background: radial-gradient(circle at top left, #13855c, #4cb648);
+	color: #fff;
+}
+a.allbtn {
+    display: block;
+    width: 10%;
+    margin: 5% auto;
+    background: #4cb648;
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.card a {
+    text-decoration: none;
+    color: #4cb648;
+    background: none;
+}
+.card a:hover{
+	color: #fff;
+}
+.breaker {
+    display: inline-block;
+    height: 5px;
+    background: #4cb648;
+    width: 30px;
+    position: relative;
+    border-radius: 4px;
+}
+.breaker:after{
+	position: absolute;
+	content: "";
+	background: #4cb648;
+	width: 30px;
+    height: 5px;
+	left: 150%;
+    border-radius: 4px;
+}
+.penghargaan{
+	width: 90%;
+	margin: 0 auto;
+}
+.konten-penghargaan {
+    text-align: center;
+    margin: 50px 0;
+}
+.konten-penghargaan h2{
+	position: relative;
+	font-size: 24px;
+	font-family: 'LEMON MILK';
+	text-align: center;
+}
+.isi-penghargaan {
+	z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 250px;
+}
+.card1{
+	width: 100%;
+	transition: 0.2s ease;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-right: 40px;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card2{
+	width: 100%;
+	height: 100%;
+	transition: 0.2s ease;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.card2 img{
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.penghargaan-img{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	align-items: center;
+}
+.card1:hover{
+	background: radial-gradient(circle at top left, #13855c, #4cb648);
+	color: #fff;
+	-webkit-transform: scale(1.08);
+ 	transform: scale(1.08);
+}
+.card2:hover{
+	background: radial-gradient(circle at top left, #13855c, #4cb648);
+	color: #fff;
+	-webkit-transform: scale(1.08);
+ 	transform: scale(1.08);
+ }
+.icon-penghargaan{
+	background: #4cb648;
+	position: absolute;
+	margin-top: 150px;
+	left: 44%;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	border: 10px solid#fff;
+	z-index: 1;
+}
+.icon-penghargaan::before{
+	position: absolute;
+	content: '\f091';
+	font-family: fontAwesome;
+	line-height: 150px;
+	font-size: 80px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.panel{
+	padding: 5%;
+	box-shadow: 0px 6px 18px -8px rgba(118,130,183,1);
+	border-radius: 10px;
+	transition: 0.2s ease;
+}
+.gallery-section{
+	position: relative;
+	top: 50px;
+}
+.gallery-title{
+	width: 100%;
+	text-align: center;
+}
+.gallery-title h2{
+	font-family: 'LEMON MILK';
+	color: #4e4e4e;
+	font-size: 24px;
+}
+.gallery{
+	display: grid;
+	width: 75%;
+	margin: 20px auto;
+	grid-template-rows: repeat(3, 190px);
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.gallery img{
+	width: 100%;
+	height: 100%;
+}
+.grid{
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0px 5px 10px rgb(0,0,0,0,5);
+}
+.grid:nth-child(1){
+	grid-row: 1/3;
+}
+.grid:nth-child(3){
+	grid-column: 3/5;
+}
+.grid:nth-child(5){
+	grid-row: 2/4;
+	grid-column: 3/4;
+}
+.grid:nth-child(7){
+	grid-column: 1/3;
+}
+.grid-img{
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+.overly{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	bottom: -50px;
+	transition: .5s;
+}
+.grid:hover .grid-img{
+	transform: scale(1.3);
+	transition: .5s;
+}
+.grid:hover .overly{
+	bottom: 0px;
+	transition: .5s;
+}
+.btn{
+	position: absolute;
+	left: 10px;
+	bottom: 5px;
+	display: inline-block;
+	color: #f5f5f5;
+	padding: 15px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: rgb(76,182,72,0.4);
+	line-height: 1;
+	letter-spacing: 2px;
+	border-radius: 50px;
+	font-size: 11px;
+}
+footer{
+	background: #e4f4fd;
+}
+.konten-footer{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: auto;
+	justify-self: center;
+}
+.menu{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+.menu a{
+	padding: 5px 50px 5px 0px;
+	color: #a1a1a1;
+}
+.menu-kontak{
+	display: flex;
+}
+.menu-kontak span{
+	display: none;
+}
+.menu-kontak a{
+	color: #a1a1a1;
+	font-size: 24px;
+	padding: 0px 50px 0px 0px;
+}
+.menu a:hover{
+	color: #4e4e4e;
+}
+.menu-kontak a:hover{
+	color: #4e4e4e;
+}
+.logo-footer{
+	justify-self:center;
+}
+.logo-footer h2{
+	color: #4e4e4e;
+	font-size: 24px;
+	font-family: 'LEMON MILK';
+	padding-top: 20px;
+}
+.logo-footer img{
+	width: 15%;
+}
+.navbar2 h2, .kontak2 h2{
+	color: #4e4e4e;
+	font-family: 'LEMON MILK';
+	font-size: 24px;.
+}
+.copy{
+	bottom: 20px;
+	width: 100%;
+}
+.copy p{
+	font-size: 16px;
+	color: #a1a1a1;
+	text-align: center;
+}/*
+.slider{
+	position: relative;
+	overflow-x: hidden;
+    top: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	min-height: 50vh;
+	max-height: 100vh;
+}
+.slider .imgBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+	transition-delay: 0s;
+	z-index: 1;
+	clip-path: circle(0px at center);
+}
+.slider input[type="radio"]:checked + .imgBx{
+	z-index: 10;
+	clip-path: circle(1000px at center);
+	transition-delay: 0.75s;
+}
+.slider .imgBx .content1{
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+.slider .imgBx .content2{
+	position: relative;
+	width: 100%;
+}
+.slider .imgBx .content3{
+	position: relative;
+	width: 100%;
+}
+.slider input[type="radio"]
+{
+	position: relative;
+	z-index: 1000;
+    margin-left: 20px;
+	cursor: pointer;
+}
+.card-wrapper-prdct{
+    width: 70%;
+    margin: 0 auto;
+}
+.card-prdct{
+    margin: 0 10%;
+}
+.img-showcase {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.4);
+}
+.img-showcase img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.img-select{
+    width: 350px;
+    height: 100px;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 5px;
+}
+.img-selec{
+    display: flex;
+    width: 350px;
+    height: 100px;
+    overflow: hidden;
+}
+.img-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.img-item{
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.img-item:nth-child(2){
+    margin-left: 25px
+}
+.img-item:nth-child(3){
+    margin-left: 25px
+}
+.img-item:nth-child(4){
+    margin-left: 25px
+}
+.img-item:hover{
+    opacity: 95%;
+}
+.product-content{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    left: 700px;
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'LEMON MILK';
+    font-weight: 700;
+    position: relative;
+    color: #4CB648;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #4CB648;
+    visibility: hidden;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(shoes_images/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+*/
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: #4cb648;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev{
+    left: -55px;
+}
+.container {
+	margin-top: 100px;
+    width: 70%;
+    padding: 15px;
+    background-color: #4CB648;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.slider .slick-slide {
+    border-radius: 5px;
+}
+.slider .slick-slide img {
+    width: 100%;
+}
+.imgdisplay img,
+.imgitem img{
+    width: 100%;
+}
+.produk1{
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background: #e4f4fd;
+    border-radius: 5px;
+}
+.imgitem:nth-child(1){
+    padding-left: 0px;
+}
+.imgitem:nth-child(3){
+    padding-right: 0px;
+}
+.produkkiri{
+    display: block;
+}
+.produktitle h3{
+    font-family: lemon milk;
+    font-size: 20px;
+}
+.productdetail p{
+    font-size: 16px;
+}
+.produkselect{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.imgitem{
+    width: 90%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.imgitem:hover{
+    opacity: 0.8;
+}
+.produkkanan{
+    position: relative;
+    padding-left: 50px;
+}
+
+
+/*----------MEDIA QUERIES----------*/
+
+@media(max-width: 1200px)
+{
+	.navv nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .navv nav ul{
+    text-align: center;
+    padding-right: unset;
+  }
+  .navv nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+    transition: 0.5s;
+  }
+  .navv nav ul li{
+    background: #1b1b1b;
+    display: block;
+    width: 100%;
+  }
+  .navv nav ul ul li{
+    background: #1b1b1b;
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .2s;
+  margin-top: 5px;
+}
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .2s;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+  .show{
+    display: block;
+    color: #c2c2c2;
+    font-size: 14px;
+    line-height: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 0px;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.5s ease-out;
+  }
+  .navv nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .navv nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+    transition: 0.5s;
+  }
+  .navv nav ul ul li{
+    border-bottom: 1px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+  .nav-link:hover{
+    color: #4cb648;
+  }
+  .us .img img {
+    width: 90%;
+}
+	.kontak{
+		width: 90%;
+		min-width: auto;
+		margin: 20px;
+		box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+	}
+	.kontak-info{
+		top: 0;
+		height: 500px;
+		position: relative;
+		box-shadow: none;
+	}
+	.kontak .kontak-form{
+		position: relative;
+		width: calc(100% - 350px);
+		padding-left: 0px;
+		margin-left: 0px;
+		padding: 40px;
+		height: 550px;
+		box-shadow: none;
+	}
+	.kontak-section{
+		position: relative;
+	}
+	.kontak-section::before{
+		display: none;
+	}
+	.kontak{
+		display: flex;
+	}
+	.kontak .kontak-form{
+		position: relative;
+		width: 60%;
+		height: auto;
+	}
+	.kontak .kontak-info{
+		position: relative;
+		width: 60%;
+		height: auto;
+		top: 0;
+	}
+	.kontak-info ul{
+		display: block;
+	}
+	a.allbtn {
+	    width: 20%;
+	}
+	.card1{
+		width: 30%;
+		margin-bottom: 30px;
+	}
+	.card2{
+		width: 30%;
+		margin-bottom: 30px;
+	}
+	.icon-penghargaan{
+		display: none;
+	}
+	.isi-penghargaan {
+    z-index: 0;
+    justify-content: center;
+    margin: unset;
+	}
+	.isi-penghargaan {
+    z-index: 0;
+    justify-content: center;
+    margin: unset;
+	}
+
+	.isi-pimpinan1{
+		width: 30%;
+		margin-bottom: 30px;
+	}
+	.isi-pimpinan2{
+		width: 30%;
+		margin-bottom: 30px;
+	}
+	.konten-pimpinan {
+    z-index: 0;
+    justify-content: center;
+    margin: unset;
+	}
+.gallery{
+	width: 90%;
+}
+.konten-footer{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: auto;
+	justify-self: center;
+}
+.menu{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+.menu a{
+	padding: 5px 50px 5px 0px;
+	color: #a1a1a1;
+}
+.menu-kontak{
+	display: flex;
+}
+.menu-kontak span{
+	display: none;
+}
+.menu-kontak a{
+	color: #a1a1a1;
+	font-size: 24px;
+	padding: 0px 50px 0px 0px;
+}
+.menu a:hover{
+	color: #4e4e4e;
+}
+.menu-kontak a:hover{
+	color: #4e4e4e;
+}
+.logo-footer h3{
+	display: none;
+}
+.logo-footer img{
+	width: 30%;
+}
+.copy{
+	bottom: 20px;
+	width: 100%;
+}
+.copy p{
+	font-size: 16px;
+	color: #a1a1a1;
+	text-align: center;
+}
+
+}
+
+@media screen and (max-width: 991px)
+{/*
+	.img-display{
+	width: 100%;
+}
+.imgBx{
+	position: relative;
+	left: -100px;
+}
+.img-showcase{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-select{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+	.card-prdct{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        margin: unset;
+    }
+    .card-wrapper-prdct{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+    .product-content {
+    padding-top: 0;
+    left: 60%;
+}
+.product-detail{
+	width: 80%;
+}*/
+.navv{
+	width: 100px;
+}
+.navv nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .navv nav ul{
+    text-align: center;
+    padding-right: unset;
+  }
+  .navv nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }/*
+  .show + a, ul{
+    display: none;
+    transition: 0.5s;
+  }*/
+  .navv nav ul li{
+    background: #1b1b1b;
+    display: block;
+    width: 100%;
+  }
+  .navv nav ul ul li{
+    background: #1b1b1b;
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .2s;
+  margin-top: 5px;
+}
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .2s;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+  .show{
+    display: block;
+    color: #c2c2c2;
+    font-size: 14px;
+    line-height: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 25px;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.5s ease-out;
+  }
+  .navv nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .navv nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+    transition: 0.5s;
+  }
+  .navv nav ul ul li{
+    border-bottom: 1px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+  .nav-link:hover{
+    color: #4cb648;
+  }
+  .us {
+    position: relative;	
+    display: block;
+    margin: 0 5%;
+    justify-content: center;
+}/*
+.img img {
+    width: 80%;
+    display: none;
+    visibility: hidden;
+}
+.slide {
+    width: 100%;
+    height: 75vh;
+}*/
+	.kontak{
+		width: 90%;
+		min-width: auto;
+		margin: 20px;
+		box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+	}
+	.kontak-info{
+		top: 0;
+		height: 500px;
+		position: relative;
+		box-shadow: none;
+	}
+	.kontak .kontak-form{
+		position: relative;
+		width: calc(100% - 350px);
+		padding-left: 0px;
+		margin-left: 0px;
+		padding: 40px;
+		height: 550px;
+		box-shadow: none;
+	}
+	.kontak-section{
+		position: relative;
+	}
+	.kontak-section::before{
+		display: none;
+	}
+	.kontak{
+		display: flex;
+	}
+	.kontak .kontak-form{
+		position: relative;
+		width: 60%;
+		height: auto;
+	}
+	.kontak .kontak-info{
+		position: relative;
+		width: 60%;
+		height: auto;
+		top: 0;
+	}
+	.kontak-info ul{
+		display: block;
+	}
+	.card1{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	.card2{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	.icon-penghargaan{
+		display: none;
+	}
+	.isi-penghargaan {
+    z-index: 0;
+    justify-content: center;
+    margin: unset;
+	}
+
+	.isi-pimpinan1{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	.isi-pimpinan2{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	.konten-pimpinan {
+    z-index: 0;
+    justify-content: center;
+    margin: unset;
+	}
+	.gallery {
+    display: grid;
+    width: 90%;
+    grid-template-rows: repeat(3, 190px);
+    grid-template-columns: repeat(4, 1fr);
+	}
+	.produk1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+    }
+    .container{
+        width: 100%;
+        padding: unset;
+    }
+}
+@media(max-width: 600px)
+{
+.nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .2s;
+  margin-top: 5px;
+}
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .2s;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+	.main {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+	}
+	.contact-product {
+	position: relative;
+    display: flex;
+	justify-content: center;
+	}
+	.contact-product ul li {
+    list-style-type: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0px 10px;
+	}
+	.main h1 {
+	width: auto;
+    font-style: normal;
+    font-weight: bold;
+    color: #4CB648;
+    font-size: 52px;
+    line-height: 64px;
+    font-family: 'LEMON MILK';
+	}
+	.main h3 {
+    width: auto;
+    font-style: normal;
+    color: #fff;
+    font-size: 24px;
+    line-height: 47px;
+	}
+	.us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    text-align: center;
+	}
+	.us img{
+		display: none;
+	}
+	.kontak{
+		box-shadow: none;
+	}
+	.kontak .kontak-form h2{
+		text-align: center;
+	}
+	.kontak .kontak-form{
+		padding: unset;
+    	width: 100%;
+    	box-shadow: none;
+    	z-index: 0;
+	}
+	.kontak .kontak-info{
+		display: none;
+		padding: 25px;
+		flex-direction: column;
+		align-items: flex-start;
+    	text-align: center;
+    	align-items: center;
+    	margin-top: 600px;
+    	width: 100%;
+	}
+	.kontak .kontak-info ul.sci{
+		margin-top: 40px;
+	}
+	.kontak .kontak-info h2{
+		font-size: 24px;
+	} 
+	.kontak .kontak-form .formBox .inputBox.w50{
+		width: 100%;
+	}
+	.kontak .kontak-form .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+	}
+	.isi-penghargaan {
+    z-index: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+	}
+	.card{
+		width: 100%;
+	}
+	.card1{
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.card2{
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.konten-pimpinan {
+    z-index: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+	}
+	.isi-pimpinan{
+		width: 100%;
+	}
+	.isi-pimpinan1{
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.isi-pimpinan2{
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+.gallery{
+	display: block;
+	width: 90%;
+}/*
+.slider{
+	height: 130vh;
+}
+.slider .imgBx{
+	left: 10%;
+}
+.card-wrapper-prdct {
+    width: 100%;
+    margin: 0 auto;
+}
+.img-showcase{
+		position: relative;
+		width: 230px;
+		height: 230px;
+		left: 15px;
+	}
+	.img-showcase img{
+	}
+	.img-select{
+    width: 200px;
+    height: 60px;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 5px;
+}
+.img-selec{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+}
+.img-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.img-item{
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.img-item:nth-child(2){
+    margin-left: 10px
+}
+.img-item:nth-child(3){
+    margin-left: 10px
+}
+.img-item:nth-child(4){
+    margin-left: 10px
+}
+.product-content{
+    position: relative;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+}
+.product-title{
+	font-size: 24px;
+}
+.slider input[type="radio"]
+{
+	position: relative;
+	z-index: 1000;
+}*/
+.produk1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+    }
+    .container{
+        width: 100%;
+        padding: unset;
+    }
+footer{
+	background: #e4f4fd;
+}
+.konten-footer{
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: auto;
+	justify-self: center;
+	text-align: center;
+}
+.menu{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+.menu a{
+	padding: 10px 10px;
+}
+.menu-kontak{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0px;
+}
+.menu-kontak span{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #a1a1a1;
+	font-size: 14px;
+}
+.menu-kontak a{
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	padding: unset;
+}
+.footer1, .footer2, .footer3{
+	display: flex;
+}
+.logo-footer{
+	justify-self: center;
+}
+.logo-footer h3{
+	display: none;
+	color: #4CB648;
+	font-size: 34px;
+	font-family: 'LEMON MILK';
+}
+.logo-footer img{
+	width: 30%;
+}
+.navbar2{
+	justify-self: center;
+}
+.copy{
+	bottom: 20px;
+	width: 100%;
+}
+.copy p{
+	font-size: 16px;
+	color: #a1a1a1;
+	text-align: center;
+}
+}
+@media screen and (max-width: 360px)
+{
+	.img-showcase{
+		position: relative;
+		width: 230px;
+		height: 230px;
+		left: 15px;
+	}
+	.img-showcase img{
+	}
+	.img-select{
+    width: 200px;
+    height: 60px;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 5px;
+}
+.img-selec{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+}
+.img-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.img-item{
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.img-item:nth-child(2){
+    margin-left: 10px
+}
+.img-item:nth-child(3){
+    margin-left: 10px
+}
+.img-item:nth-child(4){
+    margin-left: 10px
+}
+.product-title{
+	font-size: 24px;
+}
+.slider input[type="radio"]
+{
+	position: relative;
+	z-index: 1000;
+}
+.product-content{
+	position: relative;
+	top: 0px;
+}
+.br{
+	visibility: hidden;
+}	
+.card1{
+	margin: unset;
+	padding-bottom: 10px;
+}
+.konten-pimpinan {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: unset;
+}
+.isi-penghargaan {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: unset;
+}
+.main h1{
+	font-size: 48px;
+}
+.main h3{
+	font-size: 24px;
+}
+}

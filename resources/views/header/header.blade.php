@@ -1,0 +1,43 @@
+@extends('layout.template')
+@section('title','Header')
+@section('content')
+
+  <div class="card shadow mb-4 mt-5">
+        <div class="card-header py-3">
+            <h3 class="m-0 font-weight-bold text-dark">Data Header</h3>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive p-2">
+                <a href="/header/add" type="button" class="btn btn-primary mb-3">Tambah</a>
+                <table class="table table-bordered" id="example" width="100%" cellspacing="0">
+                    <thead>
+                        <tr class="bg-success text-white">
+                            <th>No</th>
+                            <th>Title</th>
+                            <th>Deskripsi</th>
+                            <th>Logo</th>
+                            <th>Foto</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            @foreach ($dataheader as $row )
+                                <tr>
+                                    <td>{{$loop->iteration}}</td>
+                                    <td>{{$row->title}}</td>
+                                    <td>{{$row->deskripsi}}</td>
+                                    <td><img src="{{url('img_header/'.$row->logo)}}" width="100"></td>
+                                    <td><img src="{{url('img_header/'.$row->foto)}}" width="100"></td>
+                                    <td class="text-center">
+                                    <a href="/header/edit/{{$row->id}}" type="button" class="btn m-1 btn-warning"><i class="fas fa-fw fa-user-edit"></i></a>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+@endsection
