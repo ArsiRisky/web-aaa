@@ -78,12 +78,11 @@
 
 <section id="tentang">
    <div class="about" data-aos="fade-up">
-
     <div class="aboutbg" data-aos="fade-up">
       <div class="us">
-        <div class="about-title">
-          <h2>About Us</h2>
-        </div>
+          <div class="about-title">
+            <h2>About Us</h2>
+          </div>
           <div class="img">
               <img src="{{asset('foto/88.jpg')}}">
           </div>
@@ -91,24 +90,21 @@
           <h2>our history</h2>
             <P>Didirikan pada tahun 2015 CV. Anugerah Alam Abadi memulai dengan produksi veneer core lalu pada bulan september tahun 2015 perusahaan ini memulai produksi veneer FB. sejak itu perusahaan tumbuhmenjadi veneer terbesar hingga memiliki pelanggan di penjuru pulau hingga sampai di manca negara</P>
           </div>
-
       </div>
-    <div class="konten-about">
+      <div class="konten-about">
       @foreach ($visimisi as $row)            
           <div class="visimisi">
-            
-          <div class="visi">
-            <h2 style="color: #4e4e4e;">VISI</h2>
-            <p>{{$row->visi}}</p>
+              <div class="visi">
+                <h2 style="color: #4e4e4e;">VISI</h2>
+                <p>{{$row->visi}}</p>
+              </div>
+              <div class="misi">
+                <h2 style="color: #4e4e4e;">MISI</h2>
+                <p>{!!$row->misi!!}</p>
+              </div>
           </div>
-        <div class="misi">
-          <h2 style="color: #4e4e4e;">MISI</h2>
-          <p>{!!$row->misi!!}</p>
-        </div>
-
-      </div>
       @endforeach
-       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -265,7 +261,6 @@
 <!-- ---------- PIMPINAN ---------- -->
 
 <section class="pimpinan-section" id="pimpinan">
-
     <div class="pimpinan">
     <div class="kotak-pimpinan" data-aos="fade-up">
       <br><br><br>
@@ -275,17 +270,24 @@
       background-image: linear-gradient(to right, rgba(0,0,0,0), #4cb648, rgba(0,0,0,0));">
     </div>
     <div class="konten-pimpinan">
-      @foreach ($pimpinan as $row)
-        <div class="isi-pimpinan1" data-aos="fade-up">
-        <img src="{{asset('img_pimpinan/'.$row->foto)}}"/>
-        <div class="tulisan-pimpinan">
-          <h3>{{$row->nama}}</h3>
-          <br>
-          <p>PIMPINAN</p>
-        </div>
-      </div>  
-      @endforeach
-  </div>
+          <div class="isi-pimpinan1" data-aos="fade-up">
+              <img src="{{asset('img_pimpinan/pimpinan1.jpg')}}"/>
+            <div class="tulisan-pimpinan">
+              <h3>EDI JANUARIUS EFENDI</h3>
+              <br>
+              <p>PIMPINAN</p>
+            </div>
+          </div> 
+          <div class="isi-pimpinan2" data-aos="fade-up">
+              <img src="{{asset('img_pimpinan/pimpinan2.jpg')}}"/>
+            <div class="tulisan-pimpinan">
+              <h3>SUSANTO DJUGITO</h3>
+              <br>
+              <p>PIMPINAN</p>
+            </div>
+          </div> 
+    </div>
+    </div>
 </section>
 
 <!-- ---------- GALLERY ---------- -->
