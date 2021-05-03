@@ -25,11 +25,11 @@
 </head>
 <body>
 <header>
-  @foreach ($header as $row)
+ 
       <div class="navv">
       <nav>
          <div class="logo">
-            <img src="{{asset('img_header/'.$row->logo)}}">
+            <img src="{{asset('foto/LOGO.png')}}">
          </div>
          <label for="btn" class="icon">
          <span class="fa fa-bars"></span>
@@ -57,12 +57,9 @@
       <div class="banner">
         <img src="{{asset('foto/88.jpg')}}">
       </div>
-          
-  @endforeach
 </header>
 
 <section>
-  @foreach ($header as $row)
       <div class="main">
       <div class="main-content">
       <h1>anugerah alam abadi</h1>
@@ -76,7 +73,6 @@
       </div>
     </div>
   </div>
-  @endforeach
 </section>
 <!-- ---------- TENTANG ---------- -->
 
@@ -89,17 +85,15 @@
           <h2>About Us</h2>
         </div>
           <div class="img">
-              <img src="{{asset('foto/'.$row->foto)}}">
+              <img src="{{asset('foto/88.jpg')}}">
           </div>
           <div class="text">
-      @foreach ($about as $row)
           <h2>our history</h2>
             <P>Didirikan pada tahun 2015 CV. Anugerah Alam Abadi memulai dengan produksi veneer core lalu pada bulan september tahun 2015 perusahaan ini memulai produksi veneer FB. sejak itu perusahaan tumbuhmenjadi veneer terbesar hingga memiliki pelanggan di penjuru pulau hingga sampai di manca negara</P>
           </div>
 
       </div>
-            <div class="konten-about">
-      @endforeach
+    <div class="konten-about">
       @foreach ($visimisi as $row)            
           <div class="visimisi">
             

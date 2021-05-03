@@ -52,13 +52,13 @@
             </li>
 
 
-            <!-- Nav Item -About Us -->
+            {{-- <!-- Nav Item -About Us -->
             <li class="nav-item {{ request()->is('about') ? 'active' : ''}}">
                 <a class="nav-link collapsed" href="/about">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>About Us</span>
                 </a>
-            </li>
+            </li> --}}
 
             <!-- Nav Item - Achievement -->
             <li class="nav-item {{ request()->is('achievement') ? 'active' : ''}}">

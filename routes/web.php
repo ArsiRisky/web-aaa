@@ -27,13 +27,13 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/',[IndexController::class,'index']);
 
-// about
-Route::get('/about', [AboutController::class, 'index'])->name('about');
-Route::get('/about/add', [AboutController::class, 'add']);
-Route::post('/about/insert', [AboutController::class, 'insert'])->name('insert-about');
-Route::get('/about/edit/{id}', [AboutController::class, 'edit']);
-Route::post('/about/simpanedit/{id}', [AboutController::class, 'simpanedit']);
-Route::get('/about/delete/{id}', [AboutController::class, 'delete']);
+// // about
+// Route::get('/about', [AboutController::class, 'index'])->name('about');
+// Route::get('/about/add', [AboutController::class, 'add']);
+// Route::post('/about/insert', [AboutController::class, 'insert'])->name('insert-about');
+// Route::get('/about/edit/{id}', [AboutController::class, 'edit']);
+// Route::post('/about/simpanedit/{id}', [AboutController::class, 'simpanedit']);
+// Route::get('/about/delete/{id}', [AboutController::class, 'delete']);
 
 // achievement
 Route::get('/achievement', [AchievementController::class, 'index'])->name('achievement');
