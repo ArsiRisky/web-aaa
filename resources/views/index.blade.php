@@ -4,23 +4,47 @@
   <meta charset="utf-8">
 	<title>Anugerah Alam Abadi</title>
   <link rel="shortcut icon" href="{{asset('foto/LOGO.png')}}">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="{{asset('template/css/index.css')}}">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" href="{{asset('template/css/lightbox.css')}}">
 
-<link href="//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="{{asset('template/css/index.css')}}">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" type="text/css" href="{{asset('template/css/lightbox.css')}}">
+<!-- ----- FONT LEMON MILK ----- -->
+  <link href="//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk" rel="stylesheet" type="text/css"/>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
+  <!------------------- SCRIPT ---------------->
+
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
   <script type="text/javascript" src="{{asset('template/js/lightbox-plus-jquery.js')}}"></script>
+
   <script src="https://kit.fontawesome.com/679d050ec1.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
   <script src="{{asset('template/js/index.js')}}"></script>
+
+<!--   ----- LINK BERITA ----- -->
+<link rel="stylesheet" type="text/css" href="{{asset('template/slick-master/slick/slick.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('template/slick-master/slick/slick-theme.css')}}">
+
+  <!-- SCRIPT SLICK -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <!-- SCRIPT READ MORE -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-expander/1.7.0/jquery.expander.js"></script>
+
 
 </head>
 <body>
@@ -113,70 +137,192 @@
 
 <section id="product">
 
-<div class="container">
-  <div class="slider">
+  <div class="product-title"><h2>our product</h2></div>
+      <hr style="border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), #4cb648, rgba(0,0,0,0));">
+    <div class="slider-produk">
 
-  @foreach ($product as $row)
-    <div><div class="produk1">
-                <div class="produkkiri">
-                <div class="produk_img">
-                    <div class="produkdisplay">
-                        <div class="imgdisplay">
-                        <img src = "{{url('img_product/'.$row->foto_1)}}" id="expandedImg" alt = "shoe image">
-                        </div>
-                    </div>
-                </div>
-
-            <div class="produkselect">
-                <div class="imgitem">
-                    <a data-id = "1">
-                      <img src = "{{asset('img_product/'.$row->foto_1)}}" alt = "shoe image"onclick="myFunction(this);">
-                    </a>
-                </div>
-                <div class="imgitem">
-                    <a data-id = "2">
-                      <img src = "{{asset('img_product/'.$row->foto_2)}}" alt = "shoe image"onclick="myFunction(this);">
-                    </a>
-                </div>
-                <div class="imgitem">
-                    <a data-id = "1">
-                      <img src = "{{asset('img_product/'.$row->foto_3)}}" alt = "shoe image"onclick="myFunction(this);">
-                    </a>
-                </div>
+      <div class="produk">
+        <div class="produkkiri">
+          <div class="produkdisplay">
+            <div class="imgdisplay">
+              <img src="{{asset('foto/88.jpg')}}" id="expandedImg1">
             </div>
+          </div>
+      <div class="produkselect">
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction1(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "2">
+                  <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction1(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction1(this);">
+                  </a>
+        </div>
+      </div>
+      </div>
+
+      <div class="produkkanan">
+        <div class="produkname">
+          <h2>bbcc</h2>
+        </div>
+
+        <div class="produkdetail">
+          <p>Panjang : 1000</p>
+          <p>Lebar : 1000</p>
+          <p>Tebal : 1000</p>
+          <p>Jenis Kayu : 1000</p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          consequat.</p>
+        </div>
+
+
+      </div>
+      </div>
+
+      <div class="produk">
+        <div class="produkkiri">
+          <div class="produkdisplay">
+            <div class="imgdisplay">
+              <img src="{{asset('foto/88.jpg')}}" id="expandedImg2">
             </div>
+          </div>
+      <div class="produkselect">
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction2(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "2">
+                  <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction2(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction2(this);">
+                  </a>
+        </div>
+      </div>
+      </div>
 
-            <div class="produkkanan">
-                <div class="produktitle">
-                    <h3>UB</h3>
-                </div>
+      <div class="produkkanan">
+        <div class="produkname">
+          <h2>uty be2ter</h2>
+        </div>
 
-                <div class="produkdetail">
-                    <br>
-                    <p>Panjang : 1000</p>
-                    <br>
-                    <p>Lebar : 1000</p>
-                    <br>
-                    <p>Tebal : 1000</p>
-                    <br>
-                    <p>Jenis Kayu : 1000</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-                </div>
+        <div class="produkdetail">
+          <p>Panjang : 1000</p>
+          <p>Lebar : 1000</p>
+          <p>Tebal : 1000</p>
+          <p>Jenis Kayu : 1000</p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+
+      </div>
+      </div>
+      <div class="produk">
+        <div class="produkkiri">
+          <div class="produkdisplay">
+            <div class="imgdisplay">
+              <img src="{{asset('foto/88.jpg')}}" id="expandedImg3">
             </div>
+          </div>
+      <div class="produkselect">
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction3(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "2">
+                  <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction3(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction3(this);">
+                  </a>
+        </div>
+      </div>
+      </div>
+
+      <div class="produkkanan">
+        <div class="produkname">
+          <h2>UB</h2>
+        </div>
+
+        <div class="produkdetail">
+          <p>Panjang : 1000</p>
+          <p>Lebar : 1000</p>
+          <p>Tebal : 1000</p>
+          <p>Jenis Kayu : 1000</p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="produk">
+        <div class="produkkiri">
+          <div class="produkdisplay">
+            <div class="imgdisplay">
+              <img src="{{asset('foto/88.jpg')}}" id="expandedImg4">
             </div>
+          </div>
+      <div class="produkselect">
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction4(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "2">
+                  <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction4(this);">
+                  </a>
+        </div>
+        <div class="imgitem">
+          <a data-id = "1">
+                  <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction4(this);">
+                  </a>
+        </div>
+      </div>
+      </div>
 
-            </div>
-  @endforeach
-              </div>
+      <div class="produkkanan">
+        <div class="produkname">
+          <h2>UB</h2>
+        </div>
 
-  </div>
-</section>    
+        <div class="produkdetail">
+          <p>Panjang : 1000</p>
+          <p>Lebar : 1000</p>
+          <p>Tebal : 1000</p>
+          <p>Jenis Kayu : 1000</p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+      </div>
+      </div>
 
-    {{-- @foreach ($product as $row) --}}
+    </div>
+  </section>   
+
+    <!-- {{-- @foreach ($product as $row) --}}
 
     {{-- <input type="radio" name="slider" checked="">
     <div class="imgBx">
@@ -224,7 +370,7 @@
       </div>
     </div> 
     </div> --}}
-    {{-- @endforeach --}}
+    {{-- @endforeach --}} -->
 
 
 
@@ -371,41 +517,127 @@
   </section>
 
 <!-- ---------- BERITA ---------- -->
-
-<section class="berita-section" id="berita">
-  
-  <div class="berita" data-aos="fade-up">
-    <div class="title">
-      <h2 style="color: #4e4e4e;">BERITA</h2>
-      <hr style="border: 0;
-      height: 1px;
-      background-image: linear-gradient(to right, rgba(0,0,0,0), #4cb648, rgba(0,0,0,0));">
-    </div>
-    <div class="column-card" data-aos="fade-up">
-      @foreach ($berita as $row)
-          <div class="card" data-aos="zoom-out" data-aos-duration="2000">
-        <img src="{{asset('img_berita/'.$row->foto)}}"/>
+<section class="regular slider">
+    <div>
+      <div class="berita-box">
+        <div class="berita-image">
+        <img src="ub1.jpg"/>
+        </div>
         <div class="panel">
-          <span>{{$row->Waktu}}</span>
+          <span>26th</span>
           <h3>
-            <br>
-            {{$row->judul}}
+            berita 4
           </h3>
           <span class="breaker"></span>
-          <p>
-            <br>
-            {{$row->penjelasan}}
-            <br>
-          </p>
-          <br>
-          <a href="#!">More <i class="fa fa-long-arrow-right"></i></a>
+          <div class="readmore">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
       </div>
-      @endforeach
     </div>
-  </div>
+    <div>
+      <div class="berita-box">
+        <div class="berita-image">
+        <img src="ub1.jpg"/>
+        </div>
+        <div class="panel">
+          <span>26th</span>
+          <h3>
+            berita 2
+          </h3>
+          <span class="breaker"></span>
+          <div class="readmore">
+            <p>
+              sdlsadpkpakdpkad
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="berita-box">
+        <div class="berita-image">
+        <img src="ub1.jpg"/>
+        </div>
+        <div class="panel">
+          <span>26th</span>
+          <h3>
+            berita 3
+          </h3>
+          <span class="breaker"></span>
+          <div class="readmore">
+            <p>
+              sdfhaijowsdiowjd
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="berita-box">
+        <div class="berita-image">
+        <img src="ub1.jpg"/>
+        </div>
+        <div class="panel">
+          <span>26th</span>
+          <h3>
+            berita 4
+          </h3>
+          <span class="breaker"></span>
+          <div class="readmore">
+            <p>
+              kolspspspdsosa
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="berita-box">
+        <div class="berita-image">
+        <img src="ub1.jpg"/>
+        </div>
+        <div class="panel">
+          <span>26th</span>
+          <h3>
+            berita 5
+          </h3>
+          <span class="breaker"></span>
+          <div class="readmore">
+            <p>
+              jimjam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="berita-box">
+        <div class="berita-image">
+        <img src="ub1.jpg"/>
+        </div>
+        <div class="panel">
+          <span>26th</span>
+          <h3>
+            berita 6
+          </h3>
+          <span class="breaker"></span>
+          <div class="readmore">
+            <p>
+            tralala
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
 
 <!-- ---------- KONTAK ---------- -->
 
@@ -462,8 +694,8 @@
 <footer>
   <div class="konten-footer">
         <div class="logo-footer">
-          <img src="{{asset('foto/LOGO.png')}}">
           <h2>Anugerah Alam Abadi</h2>
+          <img src="{{asset('foto/LOGO.png')}}">
         </div>
         <div class="navbar2">
           <br>
@@ -538,10 +770,42 @@
         $(document).ready(function(){
             $('.slider').slick({
             autoplay: true,
-            autoplaySpeed: 2500,
+            autoplaySpeed: 5000,
             dots: true
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $('.slider-produk').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true
+            });
+        });
+    </script>
+
+
+<!-- ----- SCRIPT BERITA ----- -->
+<script src="{{asset('template/slick-master/slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".readmore").expander({
+          slicePoint : 30,
+          expandText: 'More',
+          userCollapseText : 'Less'
+    });
+});
+</script>
 </body>
 </html>

@@ -92,52 +92,47 @@ $('.overlay').addClass('overlay-blue');
 var fruits = ["apple", "orange", "cherry"];
 fruits.forEach(myFunction);
 
-function myFunction(item, index) {
-    document.getElementById("demo").innerHTML += index + ":" + item + "<br>";
-}
+// function myFunction(item, index) {
+//     document.getElementById("demo").innerHTML += index + ":" + item + "<br>";
+// }
 
-function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    expandImg.src = imgs.src;
-}
-
-function myFunction(imgs) {
-    var expandImg1 = document.getElementById("expandedImg");
+function myFunction1(imgs) {
+    var expandImg1 = document.getElementById("expandedImg1");
     expandImg1.src = imgs.src;
 }
 
-function myFunction(imgs) {
-    var expandImg2 = document.getElementById("expandedImg");
+function myFunction2(imgs) {
+    var expandImg2 = document.getElementById("expandedImg2");
     expandImg2.src = imgs.src;
 }
 
-function myFunction(imgs) {
-    var expandImg3 = document.getElementById("expandedImg");
+function myFunction3(imgs) {
+    var expandImg3 = document.getElementById("expandedImg3");
     expandImg3.src = imgs.src;
 }
 
-function myFunction(imgs) {
-    var expandImg4 = document.getElementById("expandedImg");
+function myFunction4(imgs) {
+    var expandImg4 = document.getElementById("expandedImg4");
     expandImg4.src = imgs.src;
 }
-
-function myFunction(imgs) {
-    var expandImg5 = document.getElementById("expandedImg");
-    expandImg5.src = imgs.src;
-}
-// function myFunction7(imgs) {
-//   var expandImg7 = document.getElementById("expandedImg7");
-//   expandImg7.src = imgs.src;
-// }
-// function myFunction8(imgs) {
-//   var expandImg8 = document.getElementById("expandedImg8");
-//   expandImg8.src = imgs.src;
-// }
-// function myFunction9(imgs) {
-//   var expandImg9 = document.getElementById("expandedImg9");
-//   expandImg9.src = imgs.src;
-// }
-// function myFunction0(imgs) {
-//   var expandImg0 = document.getElementById("expandedImg0");
-//   expandImg0.src = imgs.src;
-// }
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    });
+  $(document).ready(function () {
+    $(".readmore").expander({
+          slicePoint : 30,
+          expandText: 'More',
+          userCollapseText : 'Less'
+    });
+});
+  $(document).on('ready', function() {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
