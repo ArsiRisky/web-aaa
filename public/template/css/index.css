@@ -11,6 +11,7 @@ body {
     background: #f5f5f5;
     width: 100%;
     overflow-x: hidden;
+    color: #4e4e4e;
 }
 
 .banner {
@@ -68,7 +69,7 @@ header .sticky .icon {
 }
 
 .logo img {
-    width: 10vh;
+    width: 50px;
 }
 
 .navv nav ul {
@@ -204,6 +205,7 @@ a {
     font-style: normal;
     font-weight: bold;
     color: #4CB648;
+    letter-spacing: 2px;
     font-size: 9vh;
 }
 
@@ -672,6 +674,7 @@ a {
 .kontak .kontak-form .formBox .inputBox input[type="submit"]:hover {
     background: #fff38e;
     color: #4CB648;
+    right: 
 }
 
 /*.berita-section {
@@ -778,21 +781,17 @@ a.allbtn {
     left: 150%;
     border-radius: 4px;
 }*/
-.berita-title {
-    width: 100%;
-    text-align: center;
+.berita-section{
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
 }
-.berita-title h2 {
-    font-family: 'Lemon/Milk';
-    color: #4e4e4e;
-    font-size: 24px;
-}
-
     .slider {
-        width: 70%;
-        margin: 100px auto;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
     }
-
     .slick-slide {
       margin: 0px 0px;
     }
@@ -806,8 +805,6 @@ a.allbtn {
       color: #4CB648;
       font-size: 30px;
     }
-
-
     .slick-slide {
       transition: all ease-in-out .3s;
       opacity: .2;
@@ -820,6 +817,71 @@ a.allbtn {
     .slick-current {
       opacity: 1;
     }
+.title-berita h2{
+    font-family: 'Lemon/MILK';
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+}
+.box-berita{
+    width: 100%;
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+}
+.berita-img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 40%;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #4CB648;
+    border-radius: 10px;
+}
+.berita-img img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    object-fit: cover;
+}
+.berita-content{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.berita-title, .berita-isi, .berita-line{
+    position: relative;
+    top: 20px;
+}
+.berita-isi{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.berita-title h2{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Lemon/MILK';
+    color: #4CB648;
+}
+.berita-isi p{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+/*.berita-title {
+    width: 100%;
+    text-align: center;
+}
+.berita-title h2 {
+    font-family: 'Lemon/Milk';
+    color: #4e4e4e;
+    font-size: 24px;
+}
+
+
 .berita-box img{
     width: 100%;
     overflow: hidden;
@@ -894,25 +956,7 @@ a.allbtn {
 .berita-box:hover .panel .breaker:after{
     background: #dae63c;
     transition: .5s
-}
-@media screen and (max-width: 786px){
-    .card{
-        width: 45%;
-        margin-bottom: 30px;
-    }
-    a.allbtn {
-        width: 20%;
-    }
-}
-
-@media screen and (max-width: 430px){
-    .card{
-        width: 100%;
-    }
-    a.allbtn {
-        width: 30%;
-    }
-} 
+}*/
 
 .penghargaan {
     width: 90%;
@@ -1017,8 +1061,7 @@ a.allbtn {
 }
 
 .gallery-section {
-    position: relative;
-    top: 50px;
+    margin-top: 50px;
 }
 
 .gallery-title {
@@ -1242,8 +1285,6 @@ footer {
     height: 450px;
     overflow: hidden;
     box-sizing: unset;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
     background: #e3e3e3;
 }
 .produkkanan{
@@ -1317,29 +1358,165 @@ footer {
     text-align: center;
     font-family: 'Lemon/MILK';
     font-size: 24px;
-    color: #4e4e4e;
     padding-top: 50px;
 }
 
 @media screen and (max-width: 600px){
-  .slider-produk {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-  }
-  .slick-slide {
-      margin: 80px 10px 0px 10px;
-    }
-  .produk {
-    padding: 15px;
+.slider-produk {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 900px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-slide {
+    margin: 80px 10px 0px 10px;
+}
+.produk {
     display: flex;
     flex-direction: column;
     background: #cdcdcd;
-  }
-  .produkkanan{
+    position: unset;
+    height: unset;
+    overflow: unset;
+    box-sizing: unset;
+    display: unset;
+    background: #e3e3e3;
+}
+.produkkanan{
     padding: unset;
-  }
+}
+.produkselect{
+    display: none;
+}
+.produkdisplay{
+    position: relative;
+    top: 20px;
+    left: 5%;
+    width: 90%;
+    height: 300px;
+}
+.produkkanan{
+    z-index: 5;
+    position: unset;
+    position: relative;
+    margin-left: -120px;
+    margin-top: 500px;
+    width: 90%;
+    color: #4e4e4e;
+}
+.produkdetail, .produkname{
+    position: relative;
+    top: unset;
+    left: unset;
+}
+.produkdetail{
+    margin-top: 30px;
+}
+.produkname h2{
+    letter-spacing: 2px;
+    color: #4CB648;
+    font-family: 'Lemon/MILK';
+    font-size: 16px;
+}
+.product-title h2{
+    text-align: center;
+    font-family: 'Lemon/MILK';
+    font-size: 24px;
+    margin-top: 0px;
+    right: 
+}
 } 
+.struktur{
+    width: 80%;
+    margin:  0px auto;
+    margin-top: 70px;
+    display: block;
+}
+.struktur h1{
+    text-align: center;
+    color: #4e4e4e;
+    font-family: 'Lemon/MILK';
+    font-size: 24px;
+}
+.struktur-atas{
+    margin: 0px auto;
+    width: 200px;
+    height: 200px;
+}
+.direksi-img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #4CB648;
+    border-radius: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+.direksi-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+.direksi-title{
+    position: relative;
+    top: -20px;
+    background: #e4f4fd;
+    border-radius: 10px;
+    border: 1px solid #4e4e4e;
+    z-index: 5;
+}
+.direksi-title h2{
+    letter-spacing: 1px;
+    color: #4e4e4e;
+    font-family: 'Lemon/MILK';
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+}
+.struktur-bawah{
+    margin: 0px auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+.child{
+    padding: 0px 5px;
+}
+.child-img{
+    z-index: 1;
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+    background-color: #4CB648;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.child-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+.child-title{
+    position: relative;
+    top: -20px;
+    background: #e4f4fd;
+    border-radius: 10px;
+    border: 1px solid #4e4e4e;
+    z-index: 5;
+}
+.child-title h2{
+    color: #4e4e4e;
+    letter-spacing: 1px;
+    font-family: 'Lemon/MILK';
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+}
 /*.slick-prev:before,
 .slick-next:before {
     font-family: 'slick';
@@ -2154,9 +2331,60 @@ footer {
         display: block;
         width: 80%;
     }
+    .struktur{
+        display: none;
+    }
 }
 
 @media(max-width: 600px) {
+.main{
+    width: 70%;
+    margin-top: 50px;
+}
+.slick-prev,
+.slick-next{
+    display: none;
+}
+.main h1{
+    font-size: 5vh;
+    margin: 0 auto;
+}
+.main h3{
+    font-size: 20px;
+}
+.contact-product{
+    margin-top: 50px;
+}
+.slider{
+    width: 100%;
+    max-height: 1000px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.box-berita{
+    padding-bottom: 50px;
+}
+.berita-content{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.berita-title, .berita-isi, .berita-line{
+    position: relative;
+    top: 0px;
+}
+.berita-img{
+    float: left;
+    margin-top: 0px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 50%;
+    height: 150px;
+    overflow: hidden;
+    border: 1px solid #4CB648;
+    border-radius: 10px;
+}
     .text{
         top: unset;
     }

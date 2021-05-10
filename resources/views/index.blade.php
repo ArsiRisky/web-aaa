@@ -40,6 +40,13 @@
 <link rel="stylesheet" type="text/css" href="{{asset('template/slick-master/slick/slick.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('template/slick-master/slick/slick-theme.css')}}">
 
+  <!-- script bertita -->
+
+  
+    <script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-expander/1.7.0/jquery.expander.js"></script>
+
   <!-- SCRIPT SLICK -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <!-- SCRIPT READ MORE -->
@@ -516,9 +523,70 @@
    
   </section>
 
+  <section id="struktur">
+<div class="struktur">
+  <h1>STRUKTUR</h1><br> 
+
+  <div class="struktur-atas">
+      <div class="direksi-img">
+        <img src="{{asset('foto/icon.png')}}">
+      </div>
+      <div class="direksi-title">
+        <h2>Direksi</h2>
+      </div>
+  </div>
+
+  <div class="struktur-bawah">
+
+    <div class="child">
+      <div class="child-img">
+        <img src="{{asset('foto/icon.png')}}">
+      </div>
+      <div class="child-title">
+        <h2>Marketing</h2>
+      </div>
+    </div>
+    <div class="child">
+      <div class="child-img">
+        <img src="{{asset('foto/icon.png')}}">
+      </div>
+      <div class="child-title">
+        <h2>Manajer Keuangan</h2>
+      </div>
+    </div>
+    <div class="child">
+      <div class="child-img">
+        <img src="{{asset('foto/icon.png')}}">
+      </div>
+      <div class="child-title">
+        <h2>Manajer Office</h2>
+      </div>
+    </div>
+    <div class="child">
+      <div class="child-img">
+        <img src="{{asset('foto/icon.png')}}">
+      </div>
+      <div class="child-title">
+        <h2>Manajer Produksi</h2>
+      </div>
+    </div>
+    <div class="child">
+      <div class="child-img">
+        <img src="{{asset('foto/icon.png')}}">
+      </div>
+      <div class="child-title">
+        <h2>Manajer Log</h2>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
 <!-- ---------- BERITA ---------- -->
-<section class="regular slider">
-    <div>
+<section class="berita-section" id="berita">
+<!--     <div>
       <div class="berita-box">
         <div class="berita-image">
         <img src="ub1.jpg"/>
@@ -526,7 +594,7 @@
         <div class="panel">
           <span>26th</span>
           <h3>
-            berita 4
+            berita 1
           </h3>
           <span class="breaker"></span>
           <div class="readmore">
@@ -541,101 +609,84 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="title-berita">
+      <h2>berita</h2>
     </div>
+    <hr style="border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), #4CB648, rgba(0,0,0,0));">
+    <div class="slider">
+
     <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
+      <div class="box-berita">
+        <div class="berita-img">
+          <img src="{{asset('foto/b.jpg')}}">
         </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 2
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              sdlsadpkpakdpkad
-            </p>
+        <div class="berita-content">
+          <div class="berita-title">
+            <h2>berita pertama yakan</h2>
+          </div>
+    <hr class="berita-line" style="border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, #4e4e4e, rgba(0,0,0,0));">
+          <div class="berita-isi">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
           </div>
         </div>
       </div>
     </div>
+
     <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
+      <div class="box-berita">
+        <div class="berita-img">
+          <img src="{{asset('foto/b.jpg')}}">
         </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 3
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              sdfhaijowsdiowjd
-            </p>
+        <div class="berita-content">
+          <div class="berita-title">
+            <h2>kedwa</h2>
+          </div>
+    <hr class="berita-line" style="border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, #4e4e4e, rgba(0,0,0,0));">
+          <div class="berita-isi">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 4
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              kolspspspdsosa
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 5
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              jimjam
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 6
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-            tralala
-          </div>
-        </div>
-      </div>
-    </div>
+
+  </div>
   </section>
 
 
@@ -769,8 +820,6 @@
     <script>
         $(document).ready(function(){
             $('.slider').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
             dots: true
             });
         });
@@ -800,7 +849,7 @@
 </script>
 <script type="text/javascript">
   $(document).ready(function () {
-    $(".readmore").expander({
+    $(".berita-isi").expander({
           slicePoint : 30,
           expandText: 'More',
           userCollapseText : 'Less'
