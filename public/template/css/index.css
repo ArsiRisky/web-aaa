@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
@@ -679,10 +676,7 @@ a {
     color: #4CB648;
     right: 
 }
-<<<<<<< Updated upstream
 
-/*.berita-section {
-=======
 /*
 .berita-section {
 >>>>>>> Stashed changes
@@ -788,7 +782,6 @@ a.allbtn {
     height: 5px;
     left: 150%;
     border-radius: 4px;
-<<<<<<< Updated upstream
 }*/
 .berita-section{
     position: relative;
@@ -803,7 +796,6 @@ a.allbtn {
     }
     .slick-slide {
       margin: 0px 0px;
-=======
 }*//*
 .berita, .berita-fluid, .berita-lg, .berita-md, .berita-sm, .berita-xl {
     width: 100%;
@@ -1006,7 +998,6 @@ a.allbtn {
 
     .slick-slide {
       margin: 0px 20px;
->>>>>>> Stashed changes
     }
 
     .slick-slide img {
@@ -1015,17 +1006,10 @@ a.allbtn {
 
     .slick-prev:before,
     .slick-next:before {
-<<<<<<< Updated upstream
       color: #4CB648;
       font-size: 30px;
     }
-=======
-      color: #4cb648;
-      font-size: 30px;
-    }
 
-
->>>>>>> Stashed changes
     .slick-slide {
       transition: all ease-in-out .3s;
       opacity: .2;
@@ -1038,7 +1022,6 @@ a.allbtn {
     .slick-current {
       opacity: 1;
     }
-<<<<<<< Updated upstream
 .title-berita h2{
     font-family: 'Lemon/MILK';
     font-size: 24px;
@@ -1067,7 +1050,7 @@ a.allbtn {
     height: 100%;
     justify-content: center;
     object-fit: cover;
-=======
+}
 .berita-box img{
     width: 100%;
     overflow: hidden;
@@ -1486,11 +1469,9 @@ footer {
     grid-template-rows: auto;
     justify-self: center;
 }
-<<<<<<< Updated upstream
 .navbar2, .kontak2{
     position: relative;
     left: 100px
-=======
 .navbar2{
     position: relative;
     left: 100px;
@@ -1498,7 +1479,6 @@ footer {
 .kontak2{
     position: relative;
     left: 100px;
->>>>>>> Stashed changes
 }
 .menu {
     display: grid;
@@ -2663,7 +2643,6 @@ footer {
 }
 
 @media(max-width: 600px) {
-<<<<<<< Updated upstream
 .main{
     width: 70%;
     margin-top: 50px;
@@ -2716,9 +2695,6 @@ footer {
         top: unset;
     }
     .navbar2, .kontak2{
-=======
-    .kontak2, .navbar2{
->>>>>>> Stashed changes
         left: unset;
     }
     .nav-link::after {

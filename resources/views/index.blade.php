@@ -20,7 +20,6 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-<<<<<<< Updated upstream
   <!------------------- SCRIPT ---------------->
 
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -36,7 +35,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 
   <script src="{{asset('template/js/index.js')}}"></script>
-=======
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" crossorigin="anonymous" />
@@ -55,7 +54,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-expander/1.7.0/jquery.expander.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-expander/1.7.0/jquery.expander.js"></script>
->>>>>>> Stashed changes
+
 
 <!--   ----- LINK BERITA ----- -->
 <link rel="stylesheet" type="text/css" href="{{asset('template/slick-master/slick/slick.css')}}">
@@ -77,10 +76,7 @@
 </head>
 <body>
 <header>
-<<<<<<< Updated upstream
- 
-=======
->>>>>>> Stashed changes
+
       <div class="navv">
       <nav>
          <div class="logo">
@@ -132,10 +128,8 @@
 
 <section id="tentang">
    <div class="about" data-aos="fade-up">
-<<<<<<< Updated upstream
-=======
+
      @foreach ($about as $row)
->>>>>>> Stashed changes
     <div class="aboutbg" data-aos="fade-up">
       <div class="us">
           <div class="about-title">
@@ -145,10 +139,6 @@
               <img src="{{asset('foto/88.jpg')}}">
           </div>
           <div class="text">
-<<<<<<< Updated upstream
-=======
-     
->>>>>>> Stashed changes
           <h2>our history</h2>
             <P>Didirikan pada tahun 2015 CV. Anugerah Alam Abadi memulai dengan produksi veneer core lalu pada bulan september tahun 2015 perusahaan ini memulai produksi veneer FB. sejak itu perusahaan tumbuhmenjadi veneer terbesar hingga memiliki pelanggan di penjuru pulau hingga sampai di manca negara</P>
           </div>
@@ -558,7 +548,6 @@
 <div class="struktur">
   <h1>STRUKTUR</h1><br> 
 
-<<<<<<< Updated upstream
   <div class="struktur-atas">
       <div class="direksi-img">
         <img src="{{asset('foto/icon.png')}}">
@@ -585,7 +574,7 @@
       <div class="child-title">
         <h2>Manajer Keuangan</h2>
       </div>
-=======
+
 <section class="berita-section slider" id="berita">
 
 
@@ -921,14 +910,9 @@
         </div>
       </div>
     </div>
-<<<<<<< Updated upstream
 
   </div>
   </section>
-=======
-  </div> -->
->>>>>>> Stashed changes
-
 
 <!-- ---------- KONTAK ---------- -->
 
@@ -1074,7 +1058,6 @@
         });
     </script>
 
-<<<<<<< Updated upstream
 
 <!-- ----- SCRIPT BERITA ----- -->
 <script src="{{asset('template/slick-master/slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
@@ -1097,7 +1080,6 @@
     });
 });
 </script>
-=======
     <script type="text/javascript">
   $(document).ready(function(){
     $("#news-slider").owlCarousel({
