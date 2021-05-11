@@ -55,7 +55,7 @@
       </nav>
     </div>
       <div class="banner">
-        <img src="{{asset('foto/88.jpg')}}">
+        <img src="{{asset('foto/background.jpg')}}">
       </div>
 </header>
 
