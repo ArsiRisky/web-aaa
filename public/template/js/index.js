@@ -89,57 +89,26 @@ window.addEventListener('resize', slideImage);
 $('.overlay').addClass('overlay-blue');
 
 
-var fruits = ["apple", "orange", "cherry"];
-fruits.forEach(myFunction);
-
-// function myFunction(item, index) {
-//     document.getElementById("demo").innerHTML += index + ":" + item + "<br>";
-// }
-
 function myFunction1(imgs) {
-    var expandImg1 = document.getElementById("expandedImg1");
-    expandImg1.src = imgs.src;
+  var expandImg1 = document.getElementById("expandedImg1");
+  expandImg1.src = imgs.src;
 }
-
 function myFunction2(imgs) {
-    var expandImg2 = document.getElementById("expandedImg2");
-    expandImg2.src = imgs.src;
+  var expandImg2 = document.getElementById("expandedImg2");
+  expandImg2.src = imgs.src;
 }
-
 function myFunction3(imgs) {
-    var expandImg3 = document.getElementById("expandedImg3");
-    expandImg3.src = imgs.src;
+  var expandImg3 = document.getElementById("expandedImg3");
+  expandImg3.src = imgs.src;
 }
-
 function myFunction4(imgs) {
-    var expandImg4 = document.getElementById("expandedImg4");
-    expandImg4.src = imgs.src;
+  var expandImg4 = document.getElementById("expandedImg4");
+  expandImg4.src = imgs.src;
 }
-<<<<<<< Updated upstream
-=======
-
-function myFunction(imgs) {
-    var expandImg5 = document.getElementById("expandedImg");
-    expandImg5.src = imgs.src;
+function myFunction5(imgs) {
+  var expandImg5 = document.getElementById("expandedImg5");
+  expandImg5.src = imgs.src;
 }
-// function myFunction7(imgs) {
-//   var expandImg7 = document.getElementById("expandedImg7");
-//   expandImg7.src = imgs.src;
-// }
-// function myFunction8(imgs) {
-//   var expandImg8 = document.getElementById("expandedImg8");
-//   expandImg8.src = imgs.src;
-// }
-// function myFunction9(imgs) {
-//   var expandImg9 = document.getElementById("expandedImg9");
-//   expandImg9.src = imgs.src;
-// }
-// function myFunction0(imgs) {
-//   var expandImg0 = document.getElementById("expandedImg0");
-//   expandImg0.src = imgs.src;
-// }
-
->>>>>>> Stashed changes
     $(document).on('ready', function() {
       $(".regular").slick({
         dots: true,
@@ -148,18 +117,13 @@ function myFunction(imgs) {
         slidesToScroll: 3
       });
     });
-<<<<<<< Updated upstream
-=======
-</script>
 <script type="text/javascript">
->>>>>>> Stashed changes
   $(document).ready(function () {
     $(".readmore").expander({
           slicePoint : 30,
           expandText: 'More',
           userCollapseText : 'Less'
     });
-<<<<<<< Updated upstream
 });
   $(document).on('ready', function() {
       $(".lazy").slick({
@@ -167,6 +131,3 @@ function myFunction(imgs) {
         infinite: true
       });
     });
-=======
-});
->>>>>>> Stashed changes

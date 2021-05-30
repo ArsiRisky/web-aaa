@@ -100,6 +100,7 @@
                   <li><a class="nav-link" href="#tentang">Sejarah</a></li>
                   <li><a class="nav-link" href="#pimpinan">Pimpinan</a></li>
                   <li><a class="nav-link" href="#penghargaan">Penghargaan</a></li>
+                  <li><a class="nav-link" href="#struktur">Struktur</a></li>
                </ul>
             </li>
          </ul>
@@ -129,8 +130,8 @@
 <section id="tentang">
    <div class="about" data-aos="fade-up">
 
-     @foreach ($about as $row)
     <div class="aboutbg" data-aos="fade-up">
+     @foreach ($about as $row)
       <div class="us">
           <div class="about-title">
             <h2>About Us</h2>
@@ -143,6 +144,7 @@
             <P>Didirikan pada tahun 2015 CV. Anugerah Alam Abadi memulai dengan produksi veneer core lalu pada bulan september tahun 2015 perusahaan ini memulai produksi veneer FB. sejak itu perusahaan tumbuhmenjadi veneer terbesar hingga memiliki pelanggan di penjuru pulau hingga sampai di manca negara</P>
           </div>
       </div>
+      @endforeach
       <div class="konten-about">
       @foreach ($visimisi as $row)            
           <div class="visimisi">
@@ -163,7 +165,7 @@
 
 <!-- ---------- PRODUK ---------- -->
 
-<section id="product">
+<section class="produk-section" id="product">
 
   <div class="product-title"><h2>our product</h2></div>
       <hr style="border: 0;
@@ -175,24 +177,24 @@
         <div class="produkkiri">
           <div class="produkdisplay">
             <div class="imgdisplay">
-              <img src="{{asset('foto/88.jpg')}}" id="expandedImg1">
+              <img src="{{asset('foto/88.jpg')}}" id="expandedImg">
             </div>
           </div>
       <div class="produkselect">
         <div class="imgitem">
-          <a data-id = "1">
-                  <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction1(this);">
-                  </a>
+          
+                  <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction(this);">
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "2">
-                  <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction1(this);">
-                  </a>
+          
+                  <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction(this);">
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "1">
-                  <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction1(this);">
-                  </a>
+          
+                  <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction(this);">
+                  
         </div>
       </div>
       </div>
@@ -224,19 +226,19 @@
           </div>
       <div class="produkselect">
         <div class="imgitem">
-          <a data-id = "1">
+          
                   <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction2(this);">
-                  </a>
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "2">
+          
                   <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction2(this);">
-                  </a>
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "1">
+          
                   <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction2(this);">
-                  </a>
+                  
         </div>
       </div>
       </div>
@@ -268,19 +270,19 @@
           </div>
       <div class="produkselect">
         <div class="imgitem">
-          <a data-id = "1">
+          
                   <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction3(this);">
-                  </a>
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "2">
+          
                   <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction3(this);">
-                  </a>
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "1">
+          
                   <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction3(this);">
-                  </a>
+                  
         </div>
       </div>
       </div>
@@ -312,19 +314,19 @@
           </div>
       <div class="produkselect">
         <div class="imgitem">
-          <a data-id = "1">
+          
                   <img src = "{{asset('foto/88.jpg')}}" alt = "shoe image"onclick="myFunction4(this);">
-                  </a>
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "2">
+          
                   <img src = "{{asset('foto/bg.jpg')}}" alt = "shoe image"onclick="myFunction4(this);">
-                  </a>
+                  
         </div>
         <div class="imgitem">
-          <a data-id = "1">
+          
                   <img src = "{{asset('foto/b.jpg')}}" alt = "shoe image"onclick="myFunction4(this);">
-                  </a>
+                  
         </div>
       </div>
       </div>
@@ -567,6 +569,7 @@
         <h2>Marketing</h2>
       </div>
     </div>
+
     <div class="child">
       <div class="child-img">
         <img src="{{asset('foto/icon.png')}}">
@@ -574,211 +577,8 @@
       <div class="child-title">
         <h2>Manajer Keuangan</h2>
       </div>
+    </div>
 
-<section class="berita-section slider" id="berita">
-
-
-  <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 1
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 2
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              sdlsadpkpakdpkad
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 3
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              sdfhaijowsdiowjd
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 4
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              kolspspspdsosa
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 5
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-              jimjam
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="berita-box">
-        <div class="berita-image">
-        <img src="ub1.jpg"/>
-        </div>
-        <div class="panel">
-          <span>26th</span>
-          <h3>
-            berita 6
-          </h3>
-          <span class="breaker"></span>
-          <div class="readmore">
-            <p>
-            tralala
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  <!-- <div class="berita">
-  <h2 style="text-align: center;
-  font-family: lemon milk;
-  color: #4cb648;">Berita</h2>
-  <br>
-  <div class="row">
-    <div class="col-lg-12">
-      <div id="news-slider" class="owl-carousel">
-  
-  <div class="news-grid">
-    <div class="news-grid-image"><img src="1.jpg" alt="">
-      <div class="news-grid-box">
-      </div></div>
-      <div class="news-grid-txt">
-        <h2>1</h2>  
-        <div class="readmore">
-          <p>
-            Zakat dalam segi istilah adalah harta tertentu yang wajib dikeluarkan oleh orang yang beragama Islam dan diberikan kepada golongan yang berhak menerimanya. Zakat dari segi bahasa berarti 'bersih', 'suci', 'subur', 'berkat' dan 'berkembang'. Menurut ketentuan yang telah ditetapkan oleh syariat Islam.
-          </p>  
-        </div>
-      </div>
-    </div>
-  
-  <div class="news-grid">
-    <div class="news-grid-image"><img src="2.jpg" alt="">
-      <div class="news-grid-box">
-      </div></div>
-      <div class="news-grid-txt">
-        <h2>2</h2>
-        <div class="readmore">
-          <p>
-            tralalaldmlsl,asdoe,dl,ld,owqsom
-          </p>
-        </div>
-      </div>
-    </div>
-  
-  <div class="news-grid">
-    <div class="news-grid-image"><img src="about.jpg" alt="">
-      <div class="news-grid-box">
-      </div></div>
-      <div class="news-grid-txt">
-        <h2>3</h2>
-        <div class="readmore">
-          <p>
-            naufal farrass tertiaasdsfr
-          </p>
-        </div>
-      </div>
-    </div>
-  
-  <div class="news-grid">
-    <div class="news-grid-image"><img src="1.jpg" alt="">
-      <div class="news-grid-box">
-      </div></div>
-      <div class="news-grid-txt">
-        <h2>4</h2>  
-        <div class="readmore">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>  
-        </div>
-      </div>
-    </div>                
-    
-    </div>
-    </div>
-  </div>
-</div> -->
-  <!-- <div class="berita" data-aos="fade-up">
-    <div class="title">
-      <h2 style="color: #4e4e4e;">BERITA</h2>
-      <hr style="border: 0;
-      height: 1px;
-      background-image: linear-gradient(to right, rgba(0,0,0,0), #4cb648, rgba(0,0,0,0));">
->>>>>>> Stashed changes
-    </div>
     <div class="child">
       <div class="child-img">
         <img src="{{asset('foto/icon.png')}}">
@@ -787,6 +587,7 @@
         <h2>Manajer Office</h2>
       </div>
     </div>
+
     <div class="child">
       <div class="child-img">
         <img src="{{asset('foto/icon.png')}}">
@@ -795,6 +596,7 @@
         <h2>Manajer Produksi</h2>
       </div>
     </div>
+
     <div class="child">
       <div class="child-img">
         <img src="{{asset('foto/icon.png')}}">
@@ -805,11 +607,9 @@
     </div>
 
   </div>
-
 </div>
 </section>
 
-<!-- ---------- BERITA ---------- -->
 <section class="berita-section" id="berita">
 <!--     <div>
       <div class="berita-box">
@@ -852,9 +652,6 @@
           <div class="berita-title">
             <h2>berita pertama yakan</h2>
           </div>
-    <hr class="berita-line" style="border: 0;
-      height: 1px;
-      background-image: linear-gradient(to right, #4e4e4e, rgba(0,0,0,0));">
           <div class="berita-isi">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -886,9 +683,6 @@
           <div class="berita-title">
             <h2>kedwa</h2>
           </div>
-    <hr class="berita-line" style="border: 0;
-      height: 1px;
-      background-image: linear-gradient(to right, #4e4e4e, rgba(0,0,0,0));">
           <div class="berita-isi">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -1052,7 +846,7 @@
         $(document).ready(function(){
             $('.slider-produk').slick({
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 8000,
             dots: true
             });
         });
@@ -1099,6 +893,5 @@
         });
   });
   </script>
->>>>>>> Stashed changes
 </body>
 </html>
