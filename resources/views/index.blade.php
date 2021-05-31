@@ -429,7 +429,7 @@
         </div>
       </div>
       @endforeach
-      <div class="icon-penghargaan"></div>  
+      {{-- <div class="icon-penghargaan"></div>   --}}
   </div>
 
 </section>
